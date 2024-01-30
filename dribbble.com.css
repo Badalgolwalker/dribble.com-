@@ -1,0 +1,234 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+height: 100%;
+width: 100%;
+}
+#main{
+height: 100%;
+width: 100%;
+/* background-color: red; */
+}
+#nav{
+height: 80px;
+width: 100%;
+/* background-color: blue; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#part1 img{
+    height: 20px;
+    width: 80px;   
+    margin-top: 2px;
+}
+#part1{
+display: flex;
+    margin: 20px;
+    /* background-color: red; */
+    width: 50%;
+    justify-content: space-between;
+}
+#part1 h5{
+
+font-size: 17px;
+text-transform: capitalize;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 500;
+color: rgba(0, 0, 0, 0.58);
+}
+#part2 button{
+margin-right: 20px;
+padding: 7px;
+border-radius: 10px;
+font-size: 16px;
+font-weight: 500;
+text-transform: capitalize;
+
+border: none;
+}
+#part2 i{
+font-size: 23px;
+margin: 17px;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.733);
+}
+#btn2{
+background-color: #ea4c89;
+color: white;
+}
+#center{
+    width: 100%;
+background-color: red;
+height: 80%;
+position: relative;
+}
+video{
+    height: 100%;
+object-fit: cover;
+width: 100%;
+}
+#inner{
+ background-color: rgba(0, 0, 0, 0.628);
+ height: 100%;
+ width: 100%;
+ position: absolute;
+       top: 0; 
+}
+#nav-part1{
+height: 80px;
+width: 100%;
+/* background-color: blue; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#nav-part1 h4{
+margin: 6px;
+text-transform: capitalize;
+font-size: 17px;
+font-weight: 400;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: white;
+background-color: rgba(0, 0, 0, 0.219);
+ 
+padding: 10px 17px;
+
+border-radius: 50px;
+cursor: pointer;
+}
+#nav-part1 :nth-child(1){
+    background-color: white;
+    color: black;
+}
+#nav-part1 h4:hover{
+background-color: white;
+color: black;
+transition: all ease 0.5s;
+}
+h1{
+text-align: center;
+color: white;
+margin-top: 30px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 35px;
+font-weight: 700;
+}
+p{text-align: center;
+    color: white;
+    margin-top: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 480;
+    line-height: 25px;
+}
+input{
+width: 40%;
+margin-left: 30%;
+height: 60px;
+margin-top: 50px;
+border-radius: 50px;
+font-size: 16px;
+text-transform: capitalize;
+padding-left: 50px;
+}
+#inner i{
+color: rgba(26, 22, 22, 0.669);
+font-size: 19px;
+position: absolute;
+left: 31%;
+top: 59%;
+margin-left:8px;
+margin-top: 2px;
+}
+#nav-part2{
+/* background-color: blue; */
+height: 80px;
+width: 100%;
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h3{
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.11);
+    padding: 4px 15px;
+    border-radius: 50px;
+    border: 0.5px solid rgba(255, 255, 255, 0.621);
+}
+#nav-part2 h3:nth-child(1){
+text-transform: capitalize;
+    border: none;
+    font-size: 14px;
+}
+#nav-part2 h3:hover{
+    border: 1px solid white;
+}
+#center2{
+/* height: 100%; */
+width: 100%;
+background-color: aliceblue;
+}
+#box{
+    display: inline-block;
+    height: 250px;
+    width: 350px;
+    background-color: blue;
+     border-radius: 20px; 
+    margin-left: 23px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+        
+}
+#box img{
+height: 100%;
+width: 100%;
+ /* object-fit: cover; */
+ border-radius: 10px;
+ scale: 1;
+ transition: all ease 0.5s;
+}
+#box:hover img{
+scale: 1.2;
+
+}
+#bottom{
+    
+background:linear-gradient(rgba(255, 0, 0, 0.5),rgba(0, 0, 0, 0.534));
+display: flex;
+justify-content: space-between;
+align-items: center;
+bottom: -100;
+position: absolute;
+width: 100%;
+height: 80px;
+opacity: 0 ;
+transition: all ease 1s;
+}
+#bottom h1{
+padding-left: 10px;
+padding-bottom: 30px;
+font-size: 22px;
+}
+#bottom i{
+    color: pink;
+    padding-right: 10px;
+    padding-top: 7px;
+    font-size: 19px;
+}
+#box:hover #bottom{
+    opacity: 1;
+    bottom: 0;
+}
+
+    
+
+    
